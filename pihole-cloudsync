@@ -32,7 +32,7 @@ update='05.03.2022'
 # Project Home: https://github.com/vem882/openpubos/
 ###########################################################################
 # CONSTANTS
-personal_git_dir='/usr/local/bin/openpublists'
+personal_git_dir='/usr/local/bin/openpubos'
 pihole_dir='/etc/pihole'
 gravity_db='/etc/pihole/gravity.db'
 dnsmasq_dir='/etc/dnsmasq.d/'
