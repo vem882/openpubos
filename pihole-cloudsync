@@ -65,10 +65,6 @@ push_initialize () {
 	# Go to local Git repo directory
 	cd $personal_git_dir || exit
 
-	# Export Ad and Domain lists from Gravity database
-	$SUDO sqlite3 $gravity_db -header -csv "SELECT * FROM adlist" >$ad_list
-	$SUDO sqlite3 $gravity_db -header -csv "SELECT * FROM domainlist" >$domain_list
-
 	# Add all lists to local Git repo
 	$SUDO git add .
 	echo "Local Pi-hole initialized in Push mode and local lists were added to local Git repo. Run 'pihole-cloudsync --push' to push to remote Git repo.";
